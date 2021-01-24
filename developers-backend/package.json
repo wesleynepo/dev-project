@@ -1,0 +1,32 @@
+{
+  "name": "developers-backend",
+  "version": "1.0.0",
+  "description": "Backend solution for potetial-crud test.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon index.js",
+    "lint": "eslint .",
+    "test": "NODE_ENV=test jest --verbose",
+    "start": "NODE_ENV=production node index.js",
+    "start:test": "NODE_ENV=test node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "mongo-querystring": "^4.1.1",
+    "mongoose": "^5.11.13"
+  },
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7",
+    "supertest": "^6.1.1"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
