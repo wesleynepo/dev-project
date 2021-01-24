@@ -4,8 +4,6 @@ services:
     build: ./developers-frontend
     ports:
       - "3000:3000"
-    environment:
-      API_DEVELOPERS: 'http://localhost:3001'
     stdin_open: true
     depends_on: 
       - web
